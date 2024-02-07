@@ -42,7 +42,7 @@ def generate_titulo_eleitoral(estado=None):
     uf = uf_codes[estado.upper()]
     titulo_eleitoral = numero_sequencial + uf
 
-    # Calcula os dígitos verificadores
+    # Calculates check digits
     v1 = sum(int(titulo_eleitoral[i]) * (i + 2) for i in range(8)) % 11
     v2 = (int(uf) + v1) % 11
 

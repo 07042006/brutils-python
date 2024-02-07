@@ -93,3 +93,6 @@ from brutils.pis import (
 from brutils.voter_id import (
     is_valid as is_valid_voter_id,
 )
+from brutils.titulo_eleitoral import (
+    generate_titulo_eleitoral as generate_titulo_eleitoral,
+)
